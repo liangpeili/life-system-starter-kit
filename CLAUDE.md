@@ -30,28 +30,36 @@ When working through the day, act as a thinking partner:
 **What to log:** Decisions, conclusions, work accomplished, key insights.
 **What to skip:** Exploratory back-and-forth (unless requested), trivial exchanges.
 
-Actions that come out of conversations go in `~/Documents/YOURNAME/inbox.md`, not embedded in journal entries.
+Actions that come out of conversations go in `~/Documents/YOURNAME/50-59-capture/51-inbox/inbox.md`, not embedded in journal entries.
 
 ---
 
 ## Personal Life System
 
-Inspired by Carmack's .plan files and Franklin's systematic self-improvement.
+Inspired by Carmack's .plan files, Franklin's systematic self-improvement, and a Johnny.Decimal-style file structure.
 
 ### Locations
 
+```text
+~/Documents/YOURNAME/00-09-system/00-index.md                           # Johnny.Decimal index
+~/Documents/YOURNAME/10-19-planning/11-life-plan/plan.md               # 10-year life vision
+~/Documents/YOURNAME/10-19-planning/12-annual-goals/YYYY.md            # Annual goals
+~/Documents/YOURNAME/20-29-journal/21-daily/YYYY/MM/YYYY-MM-DD.md      # Daily entries
+~/Documents/YOURNAME/20-29-journal/22-weekly/YYYY/week-WW.md           # Weekly reviews (optional)
+~/Documents/YOURNAME/30-39-knowledge/31-reference/values.md            # Core principles
+~/Documents/YOURNAME/30-39-knowledge/31-reference/habits.md            # Routines and habits
+~/Documents/YOURNAME/30-39-knowledge/32-decisions/                     # Decision records
+~/Documents/YOURNAME/30-39-knowledge/33-research/                      # Research docs
+~/Documents/YOURNAME/40-49-relationships/41-people/                    # Notes on people
+~/Documents/YOURNAME/50-59-capture/51-inbox/inbox.md                   # Quick capture
+~/Documents/YOURNAME/90-99-system/91-templates/                        # Templates
 ```
-~/Documents/YOURNAME/plan.md                        # 10-year life vision
-~/Documents/YOURNAME/journal/YYYY/goals.md          # Annual goals
-~/Documents/YOURNAME/journal/YYYY/MM/YYYY-MM-DD.md  # Daily entries
-~/Documents/YOURNAME/journal/YYYY/MM/week-WW.md     # Weekly reviews (optional)
-~/Documents/YOURNAME/reference/values.md            # Core principles
-~/Documents/YOURNAME/inbox.md                       # Quick capture
-~/Documents/YOURNAME/decisions/                     # Decision records
-~/Documents/YOURNAME/people/                        # Notes on people (use templates/person.md)
-~/Documents/YOURNAME/research/                      # Research docs (use templates/research.md)
-~/Documents/YOURNAME/templates/                     # Templates
-```
+
+### Johnny.Decimal Rules
+
+- Keep areas stable; add categories sparingly.
+- Prefer numbered folders over ad hoc nesting.
+- If something matters often, make sure it has a stable home and is listed in `00-09-system/00-index.md`.
 
 ### Daily Journal Format
 
@@ -72,9 +80,10 @@ When I say "morning" or "let's plan the day":
 
 ### Wiki-Links
 
-Files use `[[wiki-links]]` to cross-reference each other. When you encounter `[[some-name]]`, resolve it by searching for `some-name.md` across these directories (in order): `people/`, `research/`, `decisions/`, `journal/`, `reference/`. Use Glob to find the file, then read it for context.
+Files use `[[wiki-links]]` to cross-reference each other. When you encounter `[[some-name]]`, resolve it by searching for `some-name.md` across these directories (in order): `40-49-relationships/41-people/`, `30-39-knowledge/33-research/`, `30-39-knowledge/32-decisions/`, `20-29-journal/21-daily/`, `30-39-knowledge/31-reference/`, `10-19-planning/`. Use Glob to find the file, then read it for context.
 
 When creating or editing files, add wiki-links to connect related content:
+
 - Journal entries should link to people mentioned: `Met with [[jane-smith]]`
 - Decision docs should link to relevant research: `See [[market-analysis]]`
 - Research docs should link to people: `Led by [[jane-smith]]`
@@ -107,6 +116,7 @@ When creating or editing files, add wiki-links to connect related content:
 **Never use rebase.** Always preserve history with merge commits.
 
 When syncing with remote or resolving conflicts:
+
 - `git pull` (merge, not `git pull --rebase`)
 - `git merge origin/main` to bring in upstream changes
 - Resolve conflicts in the merge commit

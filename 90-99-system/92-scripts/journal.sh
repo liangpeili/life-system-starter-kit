@@ -10,8 +10,8 @@
 #   3. Add to your shell: alias jrn='~/.scripts/journal.sh'
 #   4. (Optional) Install icalBuddy for calendar integration: brew install ical-buddy
 
-JOURNAL_DIR="$HOME/Documents/YOURNAME/journal"
-TEMPLATE="$HOME/Documents/YOURNAME/templates/daily-journal.md"
+JOURNAL_DIR="$HOME/Documents/YOURNAME/20-29-journal/21-daily"
+TEMPLATE="$HOME/Documents/YOURNAME/90-99-system/91-templates/daily-journal.md"
 
 # Editor command — change to your preference (e.g., "cursor", "vim", "open -a Obsidian")
 EDITOR_CMD="code"

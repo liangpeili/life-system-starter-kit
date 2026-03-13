@@ -1,10 +1,20 @@
 # Life System Starter Kit
 
-A personal life operating system powered by Claude Code. Inspired by Carmack's .plan files and Franklin's systematic self-improvement.
+A personal life operating system powered by Claude Code. Inspired by Carmack's .plan files, Franklin's systematic self-improvement, and Johnny.Decimal's structured approach to finding things fast.
 
 ## What This Is
 
 A plain-text system for life planning, daily journaling, decision-making, and task capture — with Claude Code as your thinking partner. No apps, no subscriptions. Just markdown files, a terminal, and an AI that pushes back.
+
+## Johnny.Decimal Adaptation
+
+This starter kit now uses a practical Johnny.Decimal-inspired structure:
+
+- **Areas** keep the top level small and stable (`10-19-planning`, `20-29-journal`, etc.)
+- **Categories** give each kind of information an obvious home (`11-life-plan`, `32-decisions`, `41-people`)
+- **An index** in `00-09-system/00-index.md` acts as the JDex for the whole system
+
+The point is not to number everything for its own sake. The point is to make notes easier to place, easier to retrieve, and less likely to disappear into chaotic nesting.
 
 ## What You Get
 
@@ -41,7 +51,7 @@ The `/morning` skill is what powers the daily routine. Copy it into your Claude 
 
 ```bash
 mkdir -p ~/.claude/skills
-cp -r skills/morning ~/.claude/skills/morning
+cp -r 90-99-system/93-skills/morning ~/.claude/skills/morning
 ```
 
 Then **edit the skill files** — replace `YOURNAME` with your name in both `SKILL.md` and `reference.md`.
@@ -52,7 +62,7 @@ The `jrn` command creates today's journal from the template, backfills any missi
 
 ```bash
 mkdir -p ~/.scripts
-cp scripts/journal.sh ~/.scripts/journal.sh
+cp 90-99-system/92-scripts/journal.sh ~/.scripts/journal.sh
 chmod +x ~/.scripts/journal.sh
 ```
 
@@ -72,8 +82,12 @@ Now just type `jrn` to open today's journal.
 Copy the starter files to wherever you want your life system to live. The default assumes `~/Documents/[yourname]/`:
 
 ```bash
-# Copy starter files
-cp -r plan.md journal/ reference/ decisions/ people/ research/ templates/ inbox.md ~/Documents/yourname/
+# Copy the numbered life-system areas
+cp -r 00-09-system 10-19-planning 20-29-journal 30-39-knowledge 40-49-relationships 50-59-capture ~/Documents/yourname/
+
+# Copy templates into the same numbered structure
+mkdir -p ~/Documents/yourname/90-99-system
+cp -r 90-99-system/91-templates ~/Documents/yourname/90-99-system/
 ```
 
 Update the paths in your `CLAUDE.md` to match wherever you put these.
@@ -101,20 +115,24 @@ Say "morning" or "let's plan the day" and Claude will walk you through the morni
 ## How It Works Day-to-Day
 
 ### Morning
+
 Open Claude Code in your life directory. Say "morning" or "let's plan today." Claude will:
+
 - Review yesterday's journal
 - Create today's journal from the template
 - Ask you Franklin's question: "What good shall I do this day?"
 - Challenge your priorities against your annual goals
 
 ### During the Day
+
 - **Auto-logging**: Claude adds timestamped entries to your journal as you work together
-- **Inbox capture**: Quick tasks and ideas go to `inbox.md` for processing later
-- **Decision records**: When facing a significant decision, Claude helps you think through it and creates a decision doc in `decisions/`
-- **People notes**: Ask Claude to research someone before a meeting — it saves structured notes in `people/`
-- **Research**: Ask Claude to do a deep dive on any topic — it compiles findings into `research/` with sources
+- **Inbox capture**: Quick tasks and ideas go to `50-59-capture/51-inbox/inbox.md` for processing later
+- **Decision records**: When facing a significant decision, Claude helps you think through it and creates a decision doc in `30-39-knowledge/32-decisions/`
+- **People notes**: Ask Claude to research someone before a meeting — it saves structured notes in `40-49-relationships/41-people/`
+- **Research**: Ask Claude to do a deep dive on any topic — it compiles findings into `30-39-knowledge/33-research/` with sources
 
 ### Evening
+
 - Franklin's question: "What good have I done today?"
 - Brief reflection on what happened vs. what was planned
 
@@ -126,11 +144,12 @@ The files are the source of truth. Claude is the accountability partner who neve
 
 ## Wiki-Links
 
-Files can reference each other using `[[wiki-links]]`. For example, a journal entry might say `Met with [[jane-smith]] about the project` — and Claude will resolve that by finding `people/jane-smith.md` and pulling in context.
+Files can reference each other using `[[wiki-links]]`. For example, a journal entry might say `Met with [[jane-smith]] about the project` — and Claude will resolve that by finding `40-49-relationships/41-people/jane-smith.md` and pulling in context.
 
-This works because CLAUDE.md includes a convention telling Claude to search `people/`, `research/`, `decisions/`, and `journal/` when it encounters a `[[link]]`. No special editor required — the links are just a convention that Claude understands.
+This works because `CLAUDE.md` includes a convention telling Claude to search `40-49-relationships/41-people/`, `30-39-knowledge/33-research/`, `30-39-knowledge/32-decisions/`, `20-29-journal/21-daily/`, and `30-39-knowledge/31-reference/` when it encounters a `[[link]]`. No special editor required — the links are just a convention that Claude understands.
 
 Use them to connect:
+
 - **Journal entries** to **people**: `Had coffee with [[jane-smith]]`
 - **Decisions** to **research**: `Based on [[market-analysis]]`
 - **Research** to **people**: `Led by [[jane-smith]]`
@@ -143,7 +162,7 @@ Everything is a starting point. Delete what doesn't resonate, add what does:
 
 - Don't care about Franklin's questions? Remove them from the template.
 - Want weekly reviews? Add a `week-WW.md` template.
-- Have a different morning routine? Update `reference/habits.md`.
+- Have a different morning routine? Update `30-39-knowledge/31-reference/habits.md`.
 - The CLAUDE.md philosophy section is where you define the relationship. Make it yours.
 
 ## Optional: QMD for Search

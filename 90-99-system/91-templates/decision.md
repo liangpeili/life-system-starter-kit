@@ -1,10 +1,12 @@
 # [Decision Title]
 
 ---
+**ID:** 32.xx
 **Status:** Open
 **Opened:** YYYY-MM-DD
 **Closed:**
 **Decision:**
+**Related IDs:**
 ---
 
 ## Context

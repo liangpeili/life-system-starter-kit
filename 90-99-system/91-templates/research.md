@@ -1,6 +1,8 @@
 # [Research Topic]
 
+**ID:** 33.xx
 Last updated: YYYY-MM-DD
+**Related IDs:**
 
 ---
 
