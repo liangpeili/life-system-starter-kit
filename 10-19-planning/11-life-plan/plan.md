@@ -1,36 +1,37 @@
-# Life Plan
+# 人生规划
 
-## Life Chapters
+## 人生阶段
 
-<!-- Map out the major chapters of your life — past, present, and future.
-     This isn't a prediction. It's a framework for thinking about where you are
-     and where you're heading. Update it as your understanding evolves. -->
+<!-- 把你人生的重要阶段写出来：过去、现在，以及可预见的未来。
+     这不是算命，也不是线性预测，而是一个帮助你理解“我现在在哪、接下来往哪走”的框架。
+     随着理解变化，随时更新。 -->
 
-**Chapter 1: [Title]** (years, age range)
-Description of this chapter.
+**阶段 1：[标题]**（年份 / 年龄区间）
+这一阶段的大致描述。
 
-**Chapter 2: [Title]** (years, age range)
-Description of this chapter — what you're optimizing for, what success looks like.
+**阶段 2：[标题]**（年份 / 年龄区间）
+这一阶段你想重点优化什么，什么样才算过得好。
 
-**Chapter 3: [Title]** (years, age range)
-What comes after.
-
----
-
-## Enduring Insights
-
-<!-- Self-knowledge that guides your choices. What have you learned about how you
-     actually work, what you need, what drains you? Be honest — this is for you. -->
-
--
--
--
+**阶段 3：[标题]**（年份 / 年龄区间）
+再往后的生活大概会是什么样。
 
 ---
 
-## Critical Aspects
+## 长期有效的认知
 
-<!-- Non-negotiables. The things you will not sacrifice regardless of circumstances. -->
+<!-- 这些是你对自己的真实认识，会直接影响选择。
+     例如：你到底适合怎样的节奏、真正需要什么、什么最消耗你。
+     这里不要写“应该如此”，只写你反复验证过的事实。 -->
+
+-
+-
+-
+
+---
+
+## 关键维度
+
+<!-- 这些是你无论环境怎么变都不愿牺牲的东西。 -->
 
 1.
 2.
@@ -38,38 +39,40 @@ What comes after.
 
 ---
 
-## 10-Year Vision
+## 10 年愿景
 
-<!-- Where are you in 10 years? Not goals — a picture of the life.
-     What does a Tuesday look like? Who's around you? What are you working on?
-     What's the bridge from here to there? -->
+<!-- 10 年后的你，会过怎样的生活？
+     这里不是列目标，而是尽量具体地描绘生活画面。
+     比如：一个普通周二是什么样？身边有哪些人？你在做什么工作？
+     从现在到那里，中间的桥是什么？ -->
 
 
-
----
-
-## Not Prioritizing
-
-<!-- Equally important: what are you deliberately NOT doing right now?
-     Saying no explicitly prevents drift. -->
-
--
--
 
 ---
 
-## Relationships
+## 当前明确不优先做的事
 
-<!-- The people who matter most. What does investment look like for each? -->
+<!-- 同样重要的是：你现在主动决定“不做什么”？
+     把“不做”说清楚，能减少目标漂移。 -->
 
 -
 -
 
 ---
 
-## Fears to Watch
+## 关系
 
-<!-- Name them. Fears you don't name run you. Fears you name become projects. -->
+<!-- 哪些人最重要？你打算如何在关系上投入？ -->
+
+-
+-
+
+---
+
+## 需要警惕的恐惧
+
+<!-- 把它们写出来。没被命名的恐惧会暗中控制你；
+     被命名的恐惧，才有机会变成一个可以处理的问题。 -->
 
 1.
 2.

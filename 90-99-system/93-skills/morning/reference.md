@@ -1,6 +1,6 @@
-# Morning Skill Reference
+# Morning Skill 参考
 
-## File Locations
+## 文件位置
 
 ```text
 ~/Documents/YOURNAME/00-09-system/00-index.md
@@ -15,17 +15,16 @@
 ~/Documents/YOURNAME/90-99-system/91-templates/
 ```
 
-## Task Management
+## 任务管理
 
-- Quick capture: `~/Documents/YOURNAME/50-59-capture/51-inbox/inbox.md`
-- Daily to-dos: morning section of the daily journal
-- Project tasks: in the relevant project repo or planning note
+- 快速捕捉：`~/Documents/YOURNAME/50-59-capture/51-inbox/inbox.md`
+- 每日待办：放在当天日记的早晨部分
+- 项目任务：放在对应的项目仓库或规划笔记里
 
-## Optional: Calendar Integration (macOS)
+## 可选：日历集成（macOS）
 
-Install `icalBuddy` to pull calendar events into the daily journal:
+安装 `icalBuddy`，把日历事件拉进每日笔记：
 
 ```bash
 brew install ical-buddy
 ```
-

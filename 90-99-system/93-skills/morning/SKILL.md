@@ -1,101 +1,100 @@
 ---
 name: morning
-description: "Daily journaling, reflection, and planning using the Johnny.Decimal life-system structure."
+description: "基于 Johnny.Decimal life-system 结构的每日记录、复盘与规划。"
 user-invocable: true
-allowed-tools: Read, Edit, Write, Glob, Grep, Bash, AskUserQuestion
 ---
 
-# Morning Journaling, Reflection & Planning
+# 晨间记录、复盘与规划
 
-Use a direct, curious tone. Push back when the plan is vague, overloaded, or disconnected from the user's goals.
+使用直接、好奇的语气。如果计划模糊、过载，或者和用户目标脱节，要明确指出来。
 
-## Step 1: Load Context
+## 第 1 步：加载上下文
 
-Read these in parallel:
+并行阅读以下内容：
 
-1. Yesterday's daily journal at `~/Documents/YOURNAME/20-29-journal/21-daily/YYYY/MM/YYYY-MM-DD.md`. If it does not exist, look back up to 7 days.
-2. Today's daily journal using the same pattern.
-3. Annual goals at `~/Documents/YOURNAME/10-19-planning/12-annual-goals/YYYY.md`.
-4. Life plan at `~/Documents/YOURNAME/10-19-planning/11-life-plan/plan.md`.
-5. Inbox at `~/Documents/YOURNAME/50-59-capture/51-inbox/inbox.md`.
-6. Active decisions in `~/Documents/YOURNAME/30-39-knowledge/32-decisions/` with status `Open` or `Active`.
-7. The JD index at `~/Documents/YOURNAME/00-09-system/00-index.md` when structure context would help.
+1. 昨天的日记：`~/Documents/YOURNAME/20-29-journal/21-daily/YYYY/MM/YYYY-MM-DD.md`。如果不存在，就最多向前回看 7 天。
+2. 今天的日记，路径规则相同。
+3. 年度目标：`~/Documents/YOURNAME/10-19-planning/12-annual-goals/YYYY.md`。
+4. 人生规划：`~/Documents/YOURNAME/10-19-planning/11-life-plan/plan.md`。
+5. Inbox：`~/Documents/YOURNAME/50-59-capture/51-inbox/inbox.md`。
+6. `~/Documents/YOURNAME/30-39-knowledge/32-decisions/` 中状态为 `Open` 或 `Active` 的决策。
+7. 如果需要结构性上下文，就读 JD 索引：`~/Documents/YOURNAME/00-09-system/00-index.md`。
 
-## Step 2: Review Yesterday
+## 第 2 步：回顾昨天
 
-Present what was planned, what happened, and what seems unresolved.
+先呈现：昨天原本计划了什么、实际发生了什么、还有什么看起来没解决。
 
-Then ask the user to walk through yesterday. Use AskUserQuestion when available. Push past vague narratives. Name avoidance or overcommitment when you see it.
+然后请用户带你走一遍昨天。能用 AskUserQuestion 时就用。不要停留在模糊叙述上；一旦看到回避、过度承诺或自我糊弄，要直接说出来。
 
-Update yesterday's journal if needed:
+如有需要，更新昨天的日记：
 
-- fill in missing log items
-- add an evening reflection if missing
-- mark completed todos
-- keep the user's voice
+- 补齐缺失的日志条目
+- 如果晚间反思没写，就补上
+- 标记已经完成的待办
+- 保留用户原本的表达风格
 
-## Step 3: Review Today
+## 第 3 步：检查今天
 
-Open or create today's daily journal.
+打开或创建今天的日记。
 
-Clean it up:
+把它整理干净：
 
-- remove stale carry-over items
-- keep only still-relevant commitments
-- surface inbox items worth promoting today
-- refresh active decisions if they matter this week
+- 删除已经过期的延续事项
+- 只保留今天仍然相关的承诺
+- 把今天值得提升优先级的 inbox 项目提出来
+- 如果本周相关，就刷新当前活跃决策
 
-Ask what matters most today. Offer options, but do not let the list become bloated.
+询问今天最重要的事情是什么。你可以给出选项，但不要让清单无限膨胀。
 
-## Step 4: Alignment Check
+## 第 4 步：做对齐检查
 
-Check whether today's work ladders up:
+检查今天的工作是否真正向上对齐：
 
-1. Do the main todos connect to annual goals?
-2. Are there neglected annual goals with no recent action?
-3. Do active decisions need action this week?
-4. If priorities drift, should the goals or life plan be updated?
+1. 主要待办是否连回年度目标？
+2. 有没有被长期忽略、最近完全没有动作的年度目标？
+3. 当前活跃决策本周是否需要推进？
+4. 如果优先级已经漂移，应该更新的是日程、目标，还是人生规划？
 
-Use the Johnny.Decimal structure to orient the user. If something has no obvious home, point that out.
+用 Johnny.Decimal 结构帮助用户重新定向。如果某样东西根本没有清晰归宿，要把这个问题指出来。
 
-## Step 5: Finalize Today's Journal
+## 第 5 步：完成今天的日记
 
-Make sure today's note includes:
+确保今天的笔记至少包含：
 
-- morning priorities
-- log section
-- active projects
-- active decisions
-- carried-over items only if still relevant
+- 早晨的优先事项
+- 日志区
+- 当前项目
+- 当前决策
+- 只有在仍然相关时才保留延续事项
 
-Keep the number of key outcomes realistic. Three is usually enough.
+关键结果数量要现实一点。通常 3 个已经足够。
 
-## Step 6: Close
+## 第 6 步：收尾
 
-Before finishing:
+结束前：
 
-- challenge plans that are too ambitious
-- name anything important being avoided
-- add non-today actions to `~/Documents/YOURNAME/50-59-capture/51-inbox/inbox.md`
+- 质疑那些明显过于乐观的计划
+- 点出任何正在被回避的重要事情
+- 把不属于“今天”的后续动作放进 `~/Documents/YOURNAME/50-59-capture/51-inbox/inbox.md`
 
-End with a short summary of the 1-3 things that matter most.
+最后用一句简短总结收尾：今天最重要的 1 到 3 件事是什么。
 
-## During the Day
+## 白天协作时
 
-When something log-worthy happens:
+当出现值得记进日志的事情时：
 
-- add a timestamped line to today's log
-- say `Added to log: ...`
+- 在今天的日志里加一条带时间戳的记录
+- 说一句 `Added to log: ...`
 
-When follow-up actions emerge but are not for today, add them to the inbox.
+如果出现了后续动作，但不属于今天，就把它们放进 inbox。
 
-## Evening
+## 晚间
 
-If invoked for evening reflection:
+如果这是一次晚间复盘：
 
-- read today's journal
-- summarize what got done vs planned
-- ask Franklin's closing question
-- append a brief reflection
-- carry forward unfinished items thoughtfully, not automatically
+- 阅读今天的日记
+- 总结完成了什么、和原计划相比差异在哪里
+- 问 Franklin 的晚间问题
+- 追加一段简短反思
+- 把未完成事项谨慎地延续下去，而不是机械照搬
 

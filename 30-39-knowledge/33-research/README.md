@@ -1,10 +1,10 @@
-# Research
+# 研究笔记
 
-Store research notes here.
+这里用来存放研究与调研笔记。
 
-Suggested convention:
+建议约定：
 
-- One topic per file
-- Add a `33.xx` ID in the metadata if the note becomes a stable reference
-- Link to people, decisions, and planning notes when relevant
+- 一个文件只讨论一个主题
+- 如果某条笔记会长期反复参考，就在元信息里加一个 `33.xx` ID
+- 在合适的时候，把它链接到相关人物、决策和规划笔记
 

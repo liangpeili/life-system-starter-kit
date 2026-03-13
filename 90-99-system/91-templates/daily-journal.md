@@ -1,23 +1,23 @@
 # {{DATE}}
 
-## Morning (Franklin: "What good shall I do this day?")
+## 早晨（Franklin："今天我该做些什么有益的事？"）
 
 {{PAST_TODOS}}
 
-## Calendar
+## 日历
 
 {{CALENDAR}}
 
-## Log
+## 记录
 
 -
 
-## Active Projects
+## 当前项目
 
 1.
 
-## Active Decisions
+## 当前决策
 
 {{PAST_DECISIONS}}
 
-## Evening (Franklin: "What good have I done today?")
+## 晚间（Franklin："今天我做了哪些有益的事？"）

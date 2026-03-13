@@ -1,24 +1,26 @@
-# Values
+# 价值观
 
-## Mission
+## 使命
 
-<!-- One sentence. What are you here to do? -->
-
----
-
-## Core Values
-
-<!-- 3-5 values. Not aspirational — descriptive of who you are at your best. -->
-
-1. **[Value]** — What it means to you.
-2. **[Value]** — What it means to you.
-3. **[Value]** — What it means to you.
+<!-- 用一句话回答：你来到这里，究竟想做成什么？ -->
 
 ---
 
-## Core Principles
+## 核心价值观
 
-<!-- Rules you've learned from experience. Things you'd tell a younger version of yourself. -->
+<!-- 写 3 到 5 条。不要写“希望自己拥有”的价值观，
+     要写你在状态最好时，真实呈现出来的样子。 -->
+
+1. **[价值观]** —— 这对你的实际含义是什么。
+2. **[价值观]** —— 这对你的实际含义是什么。
+3. **[价值观]** —— 这对你的实际含义是什么。
+
+---
+
+## 核心原则
+
+<!-- 这些是你从经验里学来的做事规则。
+     可以想成：如果你要给年轻时的自己提建议，会说什么。 -->
 
 1.
 2.
@@ -26,9 +28,10 @@
 
 ---
 
-## Work Principles
+## 工作原则
 
-<!-- How you do your best work. What you've learned about your process. -->
+<!-- 你在什么条件下能做出最好的工作？
+     你已经摸索出了哪些适合自己的方法？ -->
 
 1.
 2.

@@ -1,10 +1,10 @@
-# Daily Journal
+# 每日日记
 
-Store daily entries here using this path pattern:
+每天的日记都放在这里，路径格式如下：
 
 `YYYY/MM/YYYY-MM-DD.md`
 
-Example:
+例如：
 
 `20-29-journal/21-daily/2026/03/2026-03-13.md`
 

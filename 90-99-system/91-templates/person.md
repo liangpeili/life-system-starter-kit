@@ -1,45 +1,45 @@
-# [Person Name]
+# [人物姓名]
 
 **ID:** 41.xx
-**Title**:
-**Company**:
+**头衔**:
+**公司**:
 **LinkedIn**:
 **X/Twitter**:
-**Related IDs:**
+**相关 ID:**
 
 ---
 
-## Background
+## 背景
 
-<!-- Career history, education, how you know them or how they're relevant. -->
-
--
--
--
-
-## Key Views & Philosophy
-
-<!-- What do they believe? What have they said publicly that matters? -->
+<!-- 职业经历、教育背景、你是怎么认识这个人的，或者他/她为什么和你有关。 -->
 
 -
 -
+-
 
-## Notable Work
+## 关键观点与做事风格
 
-<!-- Projects, companies, investments, initiatives they're known for. -->
+<!-- 这个人相信什么？公开表达过哪些值得记住的观点？ -->
 
 -
 -
 
-## Key Interviews & Appearances
+## 代表性工作
 
-<!-- Podcasts, talks, articles — with links. -->
+<!-- 他/她最被人记住的项目、公司、投资或推动过的事情。 -->
 
 -
 -
 
-## Personal
+## 重要访谈与公开露面
 
-<!-- Interests, hobbies, connection points for conversation. -->
+<!-- 播客、演讲、文章等，尽量附链接。 -->
+
+-
+-
+
+## 个人侧面
+
+<!-- 兴趣、爱好，以及适合建立联系或展开对话的切入点。 -->
 
 -

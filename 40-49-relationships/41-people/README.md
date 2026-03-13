@@ -1,10 +1,10 @@
-# People
+# 人物笔记
 
-Store person notes here.
+这里用来存放人物相关记录。
 
-Suggested convention:
+建议约定：
 
-- One person per file
-- Add a `41.xx` ID in the metadata if the note becomes a stable reference
-- Link meeting notes and research back to the person with `[[wiki-links]]`
+- 一个人一个文件
+- 如果某个人物会被长期反复引用，就在元信息里加一个 `41.xx` ID
+- 用 `[[wiki-links]]` 把会议记录、研究笔记和这个人物连起来
 

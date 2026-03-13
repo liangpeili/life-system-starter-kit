@@ -1,39 +1,39 @@
-# [Decision Title]
+# [决策标题]
 
----
 **ID:** 32.xx
-**Status:** Open
-**Opened:** YYYY-MM-DD
-**Closed:**
-**Decision:**
-**Related IDs:**
+**状态:** Open
+**开始于:** YYYY-MM-DD
+**关闭于:**
+**结论:**
+**相关 ID:**
+
 ---
 
-## Context
+## 背景
 
-<!-- What's the situation? Why is this decision needed now? -->
+<!-- 当前是什么情况？为什么这个决策现在必须做？ -->
 
-## Options
+## 选项
 
-<!-- List the realistic options. For each: what happens if you choose it? -->
+<!-- 把现实中真正可选的方案列出来。对每个方案都写清楚：如果选它，会带来什么结果？ -->
 
-| Option | Upside | Downside | Gut Feel |
-|--------|--------|----------|----------|
-| | | | |
-| | | | |
+| 选项 | 好处 | 代价 | 直觉感受 |
+| ---- | ---- | ---- | -------- |
+|      |      |      |          |
+|      |      |      |          |
 
-## What I'm Optimizing For
+## 我真正要优化的是什么
 
-<!-- What matters most in this decision? Rank the criteria. -->
+<!-- 这个决策里最重要的判断标准是什么？按优先级排出来。 -->
 
 1.
 2.
 3.
 
-## Decision
+## 决策结论
 
-<!-- What did you decide and why? Write this after you've thought it through. -->
+<!-- 你最后决定了什么，为什么？想清楚之后再写。 -->
 
-## Review Date
+## 复盘日期
 
-<!-- When will you check if this was the right call? -->
+<!-- 你准备在什么时候回头检查：这次决定到底是不是对的？ -->

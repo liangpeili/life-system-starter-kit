@@ -1,39 +1,39 @@
-# [Research Topic]
+# [研究主题]
 
 **ID:** 33.xx
-Last updated: YYYY-MM-DD
-**Related IDs:**
+最后更新：YYYY-MM-DD
+**相关 ID:**
 
 ---
 
-## Summary
+## 摘要
 
-<!-- TL;DR — what did you learn? What's the bottom line? -->
+<!-- TL;DR：你到底学到了什么？最重要的结论是什么？ -->
 
-## Key Findings
+## 关键发现
 
-<!-- The important stuff, organized by theme. -->
+<!-- 按主题整理最重要的内容。 -->
 
-### [Theme 1]
-
--
--
-
-### [Theme 2]
+### [主题 1]
 
 -
 -
 
-## Open Questions
+### [主题 2]
 
-<!-- Things you couldn't find or need to dig into further. -->
+-
+-
+
+## 未解决问题
+
+<!-- 你还没查清、或者值得继续深挖的问题。 -->
 
 - [ ]
 - [ ]
 
-## Sources
+## 资料来源
 
-<!-- Links to everything you referenced. -->
+<!-- 把引用过的链接和资料都列在这里。 -->
 
 -
 -

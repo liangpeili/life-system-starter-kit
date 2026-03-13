@@ -1,25 +1,25 @@
-# Habits
+# 习惯
 
-Daily actions that support my mission and values.
-
----
-
-## Daily Schedule
-
-<!-- Block out your ideal day. Not rigid — directional. -->
-
-| Time | Block |
-|------|-------|
-| | Morning routine |
-| | Deep work |
-| | Lunch / admin |
-| | Deep work |
-| | Evening wind-down |
-| | Sleep |
+支撑我的使命与价值观的日常动作。
 
 ---
 
-## Morning Routine
+## 每日节奏
+
+<!-- 先画出你理想中的一天。不是死板作息，而是大方向上的节奏。 -->
+
+| 时间 | 时段 |
+|------|------|
+| | 晨间流程 |
+| | 深度工作 |
+| | 午餐 / 杂务 |
+| | 深度工作 |
+| | 晚间收尾 |
+| | 睡眠 |
+
+---
+
+## 晨间流程
 
 -
 -
@@ -27,16 +27,16 @@ Daily actions that support my mission and values.
 
 ---
 
-## Core Habits
+## 核心习惯
 
-**Health**
+**健康**
 -
 
-**Mind**
+**心智**
 -
 
-**Financial**
+**财务**
 -
 
-**Relationships**
+**关系**
 -

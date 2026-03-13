@@ -1,18 +1,18 @@
-# Johnny.Decimal Index
+# Johnny.Decimal 索引
 
-This starter kit uses a practical Johnny.Decimal-inspired structure.
+这个 starter kit 采用的是一套务实版的 Johnny.Decimal 结构。
 
-## Areas
+## 区域（Areas）
 
-- `00-09-system/` — index and system conventions
-- `10-19-planning/` — life plan and annual goals
-- `20-29-journal/` — daily and weekly journals
-- `30-39-knowledge/` — reference notes, decisions, research
-- `40-49-relationships/` — people notes
-- `50-59-capture/` — inbox and quick capture
-- `90-99-system/` — templates, scripts, and Claude skills
+- `00-09-system/` —— 索引和系统约定
+- `10-19-planning/` —— 人生规划与年度目标
+- `20-29-journal/` —— 每日日记与每周复盘
+- `30-39-knowledge/` —— 参考资料、决策、研究
+- `40-49-relationships/` —— 人物笔记
+- `50-59-capture/` —— 收件箱与快速捕捉
+- `90-99-system/` —— 模板、脚本、Claude skills
 
-## Categories
+## 类别（Categories）
 
 - `10-19-planning/11-life-plan/plan.md`
 - `10-19-planning/12-annual-goals/YYYY.md`
@@ -27,23 +27,22 @@ This starter kit uses a practical Johnny.Decimal-inspired structure.
 - `90-99-system/92-scripts/`
 - `90-99-system/93-skills/`
 
-## Working Rules
+## 使用规则
 
-1. Keep top-level areas small and stable.
-2. Add new categories only when the current one is too crowded.
-3. Prefer stable numbered folders over deep nesting.
-4. Keep a note where you expect to look for it next time.
-5. If a note becomes important enough to reference often, give it an ID in the file metadata.
+1. 顶层 area 要小而稳定。
+2. 只有当现有类别已经明显拥挤时，才新增类别。
+3. 优先使用稳定的编号目录，不要把内容越嵌越深。
+4. 一条笔记应该放在你“下次最可能去找它”的地方。
+5. 如果某条笔记已经重要到会被反复引用，就给它一个 ID，并写进文件元信息里。
 
-## Suggested ID prefixes
+## 建议使用的 ID 前缀
 
-- `11.xx` life plan notes
-- `12.xx` annual planning notes
-- `21.xx` daily journal support notes
-- `22.xx` weekly review notes
-- `31.xx` reference notes
-- `32.xx` decisions
-- `33.xx` research
-- `41.xx` people
-- `51.xx` inbox or capture support notes
-
+- `11.xx` 人生规划相关笔记
+- `12.xx` 年度规划相关笔记
+- `21.xx` 每日日记的辅助笔记
+- `22.xx` 每周复盘笔记
+- `31.xx` 参考资料
+- `32.xx` 决策记录
+- `33.xx` 研究笔记
+- `41.xx` 人物笔记
+- `51.xx` inbox / capture 的辅助笔记

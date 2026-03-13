@@ -1,10 +1,10 @@
-# Decisions
+# 决策记录
 
-Store decision records here.
+这里用来存放重要决策的记录。
 
-Suggested convention:
+建议约定：
 
-- Keep each decision as its own Markdown file
-- Use `32.xx` in the metadata when the note becomes important enough to reference repeatedly
-- Link decisions to relevant research and planning notes with `[[wiki-links]]`
+- 每个决策单独一个 Markdown 文件
+- 当某条决策已经重要到会被反复引用时，在元信息里给它一个 `32.xx` ID
+- 用 `[[wiki-links]]` 把决策与相关研究、规划笔记串起来
 

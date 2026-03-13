@@ -1,28 +1,28 @@
 #!/bin/bash
 
-# Journal quick-open script
-# Opens today's journal, creating from template if needed
-# Backfills any missing days with calendar events and carried-over todos
+# 日记快速打开脚本
+# 打开今天的日记；如果不存在，就基于模板创建
+# 如果中间断了几天，会自动补齐缺失日期，并带上日历事件和未完成事项
 #
-# Setup:
-#   1. Edit JOURNAL_DIR and TEMPLATE below to match your paths
-#   2. chmod +x this file
-#   3. Add to your shell: alias jrn='~/.scripts/journal.sh'
-#   4. (Optional) Install icalBuddy for calendar integration: brew install ical-buddy
+# 配置方法：
+#   1. 修改下面的 JOURNAL_DIR 和 TEMPLATE，使它们匹配你的实际路径
+#   2. 对这个文件执行 chmod +x
+#   3. 在 shell 里加上：alias jrn='~/.scripts/journal.sh'
+#   4. （可选）如果要集成日历，安装 icalBuddy：brew install ical-buddy
 
 JOURNAL_DIR="$HOME/Documents/YOURNAME/20-29-journal/21-daily"
 TEMPLATE="$HOME/Documents/YOURNAME/90-99-system/91-templates/daily-journal.md"
 
-# Editor command — change to your preference (e.g., "cursor", "vim", "open -a Obsidian")
+# 编辑器命令——改成你习惯的编辑器（例如 "cursor"、"vim"、"open -a Obsidian"）
 EDITOR_CMD="code"
 
-# Calendar names to include (only used if icalBuddy is installed)
+# 要纳入的日历名称（仅在安装了 icalBuddy 时使用）
 CALENDAR_NAMES="Work,Personal,Family"
 
-# Get today's date
+# 获取今天的日期
 TODAY=$(date +%Y-%m-%d)
 
-# Find most recent journal entry (looking back up to 60 days)
+# 找到最近一篇日记（最多向前回看 60 天）
 find_most_recent_journal_date() {
     for i in $(seq 1 60); do
         PAST_DATE=$(date -v-${i}d +%Y-%m-%d)
@@ -36,7 +36,7 @@ find_most_recent_journal_date() {
     done
 }
 
-# Get calendar events for a specific date (macOS only, requires icalBuddy)
+# 获取某一天的日历事件（仅 macOS，且需要 icalBuddy）
 get_calendar_events() {
     local TARGET_DATE="$1"
     if command -v icalBuddy &> /dev/null; then
@@ -72,7 +72,7 @@ print('\n'.join(results))
     fi
 }
 
-# Get incomplete todos from a journal file
+# 从一篇日记里提取未完成事项
 get_incomplete_todos() {
     local FILE="$1"
     if [ -f "$FILE" ]; then
@@ -80,7 +80,7 @@ get_incomplete_todos() {
     fi
 }
 
-# Get active (unresolved) decisions from a journal file
+# 从一篇日记里提取仍在进行中的决策事项
 get_active_decisions() {
     local FILE="$1"
     if [ -f "$FILE" ]; then
@@ -89,7 +89,7 @@ get_active_decisions() {
     fi
 }
 
-# Create a journal entry for a specific date
+# 为指定日期创建日记
 create_journal_entry() {
     local TARGET_DATE="$1"
     local PREV_FILE="$2"
@@ -98,31 +98,31 @@ create_journal_entry() {
     local TARGET_MONTH=$(echo "$TARGET_DATE" | cut -d'-' -f2)
     local TARGET_FILE="$JOURNAL_DIR/$TARGET_YEAR/$TARGET_MONTH/$TARGET_DATE.md"
 
-    # Skip if already exists
+    # 如果已经存在，就直接跳过
     if [ -f "$TARGET_FILE" ]; then
         echo "$TARGET_FILE"
         return
     fi
 
-    # Ensure directory exists
+    # 确保目标目录存在
     mkdir -p "$(dirname "$TARGET_FILE")"
 
-    # Get todos from previous file
+    # 从前一天文件里取出未完成事项
     local PAST_TODOS=""
     if [ -n "$PREV_FILE" ]; then
         PAST_TODOS=$(get_incomplete_todos "$PREV_FILE")
     fi
 
-    # Get active decisions from previous file
+    # 从前一天文件里取出仍在进行中的决策
     local PAST_DECISIONS=""
     if [ -n "$PREV_FILE" ]; then
         PAST_DECISIONS=$(get_active_decisions "$PREV_FILE")
     fi
 
-    # Get calendar events for this date
+    # 获取这一天的日历事件
     local CALENDAR_EVENTS=$(get_calendar_events "$TARGET_DATE")
 
-    # Read template and replace placeholders
+    # 读取模板并替换占位符
     if [ -f "$TEMPLATE" ]; then
         local CONTENT=$(cat "$TEMPLATE")
         CONTENT="${CONTENT//\{\{DATE\}\}/$TARGET_DATE}"
@@ -151,7 +151,7 @@ create_journal_entry() {
     echo "$TARGET_FILE"
 }
 
-# Calculate days between two dates (macOS)
+# 计算两个日期之间相差多少天（macOS）
 days_between() {
     local START_DATE="$1"
     local END_DATE="$2"
@@ -160,7 +160,7 @@ days_between() {
     echo $(( (END_SEC - START_SEC) / 86400 ))
 }
 
-# Main logic
+# 主流程
 MOST_RECENT_DATE=$(find_most_recent_journal_date)
 
 if [ -n "$MOST_RECENT_DATE" ]; then
@@ -171,18 +171,18 @@ if [ -n "$MOST_RECENT_DATE" ]; then
         PREV_MONTH=$(echo "$MOST_RECENT_DATE" | cut -d'-' -f2)
         PREV_FILE="$JOURNAL_DIR/$PREV_YEAR/$PREV_MONTH/$MOST_RECENT_DATE.md"
 
-        # Create entries for each missing day (starting from day after most recent)
+        # 为每个缺失日期创建日记（从最近一篇之后那天开始补）
         for i in $(seq $((DAYS_MISSING - 1)) -1 0); do
             TARGET_DATE=$(date -v-${i}d +%Y-%m-%d)
             PREV_FILE=$(create_journal_entry "$TARGET_DATE" "$PREV_FILE")
         done
     fi
 else
-    # No previous journal found, just create today
+    # 如果之前没有任何日记，就只创建今天这篇
     create_journal_entry "$TODAY" ""
 fi
 
-# Build today's file path and open
+# 组装今天的文件路径并打开
 TODAY_YEAR=$(date +%Y)
 TODAY_MONTH=$(date +%m)
 TODAY_FILE="$JOURNAL_DIR/$TODAY_YEAR/$TODAY_MONTH/$TODAY.md"

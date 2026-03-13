@@ -1,17 +1,17 @@
 # Inbox
 
-Quick capture. Process later.
+先快速记下来，稍后再处理。
 
 ---
 
-## To Do
+## 待处理
 
 - [ ]
 
-## Someday / Not Now
+## 以后再说 / 暂不处理
 
 -
 
-## Ideas
+## 想法
 
 -
