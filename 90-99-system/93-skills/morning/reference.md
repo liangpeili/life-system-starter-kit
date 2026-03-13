@@ -1,30 +1,10 @@
-# Morning Skill 参考
+# Morning Skill 参考（Johnny.Decimal 归档入口）
 
-## 文件位置
+这份文件保留在 `90-99-system/93-skills/morning/`，用于 Johnny.Decimal 目录归档。
 
-```text
-~/Documents/YOURNAME/00-09-system/00-index.md
-~/Documents/YOURNAME/10-19-planning/11-life-plan/plan.md
-~/Documents/YOURNAME/10-19-planning/12-annual-goals/YYYY.md
-~/Documents/YOURNAME/20-29-journal/21-daily/YYYY/MM/YYYY-MM-DD.md
-~/Documents/YOURNAME/20-29-journal/22-weekly/YYYY/week-WW.md
-~/Documents/YOURNAME/30-39-knowledge/31-reference/values.md
-~/Documents/YOURNAME/30-39-knowledge/32-decisions/
-~/Documents/YOURNAME/40-49-relationships/41-people/
-~/Documents/YOURNAME/50-59-capture/51-inbox/inbox.md
-~/Documents/YOURNAME/90-99-system/91-templates/
-```
+真正的运行时定义与参考说明在根目录：
 
-## 任务管理
+- `skills/morning/SKILL.md`
+- `skills/morning/reference.md`
 
-- 快速捕捉：`~/Documents/YOURNAME/50-59-capture/51-inbox/inbox.md`
-- 每日待办：放在当天日记的早晨部分
-- 项目任务：放在对应的项目仓库或规划笔记里
-
-## 可选：日历集成（macOS）
-
-安装 `icalBuddy`，把日历事件拉进每日笔记：
-
-```bash
-brew install ical-buddy
-```
+如果你要修改 morning skill，请只维护根目录下的那一份，避免双写漂移。
