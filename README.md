@@ -225,3 +225,12 @@ OpenClaw 的默认配置目录在 `~/.openclaw/`，主配置文件是 `~/.opencl
 ### 记得定期刷新索引
 
 QMD 不会自动更新。你可以定期运行 `qmd update && qmd embed`，也可以把它加进早晨的 `morning` skill（比如 Step 0），让每天第一段定时检查开始前自动重建索引。
+
+## 致谢
+
+这套仓库的起点和灵感，来自以下两个来源：
+
+- [davidhariri/life-system](https://github.com/davidhariri/life-system) —— 提供了把纯文本、规划、日志和 agent 协作结合起来的原始 starter kit。
+- [Johnny.Decimal 方法介绍](https://johnnydecimal.com/10-19-concepts/11-core/11.01-introduction/) —— 提供了这次目录结构改造背后的核心组织理念。
+
+这个仓库不是对它们的逐字复制，而是结合 OpenClaw、中文语境和我自己的使用方式做过调整后的版本。
