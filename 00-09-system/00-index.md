@@ -10,7 +10,7 @@
 - `30-39-knowledge/` —— 参考资料、决策、研究
 - `40-49-relationships/` —— 人物笔记
 - `50-59-capture/` —— 收件箱与快速捕捉
-- `90-99-system/` —— 模板、脚本预留、agent skills 归档说明
+- `90-99-system/` —— 模板与可选自动化预留
 
 ## 类别（Categories）
 
@@ -25,7 +25,6 @@
 - `50-59-capture/51-inbox/inbox.md`
 - `90-99-system/91-templates/`
 - `90-99-system/92-scripts/`
-- `90-99-system/93-skills/`
 
 ## OpenClaw 运行时补充
 
@@ -34,9 +33,6 @@
 - `skills/morning/` —— 晨间启动
 - `skills/midday/` —— 午间检查
 - `skills/evening/` —— 晚间总结
-- `90-99-system/93-skills/morning/` —— morning 的 Johnny.Decimal 归档入口
-- `90-99-system/93-skills/midday/` —— midday 的 Johnny.Decimal 归档入口
-- `90-99-system/93-skills/evening/` —— evening 的 Johnny.Decimal 归档入口
 
 `90-99-system/92-scripts/` 现在只是可选的本地自动化预留目录，不再承载默认入口。
 

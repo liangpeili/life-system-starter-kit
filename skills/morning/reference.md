@@ -21,7 +21,6 @@
 
 - `skills/morning/`、`skills/midday/`、`skills/evening/` 是 OpenClaw 在当前 workspace 根目录下发现的运行时入口。
 - 这里的 `skills/morning/` 也是 `morning` skill 的唯一维护入口。
-- `90-99-system/93-skills/morning/` 仅保留为 Johnny.Decimal 目录中的归档说明，不再承载另一份需要同步维护的正文。
 
 ## 推荐触发节奏
 

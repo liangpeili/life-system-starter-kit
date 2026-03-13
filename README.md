@@ -70,8 +70,6 @@ openclaw onboard --install-daemon
 
 这里的 `skills/` 也是 **唯一维护入口**。
 
-`90-99-system/93-skills/` 现在只保留为 Johnny.Decimal 目录中的归档说明，用来告诉你真正的 skill 定义在根目录的 `skills/`，不需要双写维护。
-
 ### 5. 配置定时任务（推荐）
 
 如果你的 OpenClaw 宿主或 IM 集成支持**重复定时任务**，把它设成这三个固定对话：
