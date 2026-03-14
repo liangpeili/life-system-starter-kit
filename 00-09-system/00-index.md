@@ -10,6 +10,8 @@
 - `30-39-knowledge/` —— 参考资料、决策、研究
 - `40-49-relationships/` —— 人物笔记
 - `50-59-capture/` —— 收件箱与快速捕捉
+- `60-69-personal/` —— 个人档案与生活资料
+- `70-79-creative/` —— 创作与输出
 - `90-99-system/` —— 模板与可选自动化预留
 
 ## 类别（Categories）
@@ -23,6 +25,9 @@
 - `30-39-knowledge/33-research/`
 - `40-49-relationships/41-people/`
 - `50-59-capture/51-inbox/inbox.md`
+- `60-69-personal/61-health/`
+- `60-69-personal/62-insurance/`
+- `70-79-creative/71-writing/`
 - `90-99-system/91-templates/`
 - `90-99-system/92-scripts/`
 
@@ -55,3 +60,6 @@
 - `33.xx` 研究笔记
 - `41.xx` 人物笔记
 - `51.xx` inbox / capture 的辅助笔记
+- `61.xx` 健康资料
+- `62.xx` 保险资料
+- `71.xx` 写作与创作

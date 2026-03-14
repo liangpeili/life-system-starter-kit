@@ -67,6 +67,9 @@
 30-39-knowledge/33-research/                      # 研究笔记
 40-49-relationships/41-people/                    # 人物笔记
 50-59-capture/51-inbox/inbox.md                   # 快速捕捉 / 收件箱
+60-69-personal/61-health/README.md                # 健康资料
+60-69-personal/62-insurance/README.md             # 保险资料
+70-79-creative/71-writing/README.md               # 写作与文章
 90-99-system/91-templates/                        # 模板
 skills/morning/SKILL.md                           # 晨间启动
 skills/midday/SKILL.md                            # 午间检查
@@ -113,7 +116,7 @@ skills/evening/SKILL.md                           # 晚间总结
 
 ### Wiki-Links
 
-文件之间用 `[[wiki-links]]` 互相引用。遇到 `[[some-name]]` 时，按下面顺序到这些目录里搜索 `some-name.md`：`40-49-relationships/41-people/`、`30-39-knowledge/33-research/`、`30-39-knowledge/32-decisions/`、`20-29-journal/21-daily/`、`30-39-knowledge/31-reference/`、`10-19-planning/`。先用 Glob 找文件，再读内容拿上下文。
+文件之间用 `[[wiki-links]]` 互相引用。遇到 `[[some-name]]` 时，按下面顺序到这些目录里搜索 `some-name.md`：`40-49-relationships/41-people/`、`30-39-knowledge/33-research/`、`30-39-knowledge/32-decisions/`、`70-79-creative/71-writing/`、`20-29-journal/21-daily/`、`60-69-personal/61-health/`、`60-69-personal/62-insurance/`、`30-39-knowledge/31-reference/`、`10-19-planning/`。先用 Glob 找文件，再读内容拿上下文。
 
 新建或编辑文件时，尽量补上 wiki-links，把相关内容连起来：
 
